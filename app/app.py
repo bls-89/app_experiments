@@ -26,7 +26,7 @@ def get_prediction(property1, property2, property3, property4, property5, proper
 
 @app.route('/')
 def index():
-    return "main"
+    return render_template("index.html")
 
 @app.route('/', methods=['post', 'get'])
 
