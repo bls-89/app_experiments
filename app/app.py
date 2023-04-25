@@ -43,7 +43,7 @@ def calc_prediction():
         message = get_prediction(*properties_list)
 
     # рендеринг шаблона и вывод сообщения с предсказанием    
-    return render_template("/content/templates/index.html", message=message)
+    return render_template("index.html", message=message)
 
 # Запуск приложения  
 if __name__ == '__main__':
