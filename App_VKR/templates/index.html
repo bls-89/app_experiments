@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Прогноз соотношения матрица-наполнитель</title>
+  <style type="text/css">
+    body {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    background-color: #FFFFFF; 
+    height: 100vh;
+    width: 28vw;
+   }
+ input[type="number"]{
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+  border-width: 0;
+  outline: none;
+  margin:0;
+  width: 100%;
+  padding: 10px 15px;
+  
+}
+  input[type="number"]:focus {
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+    H1{
+      text-align: center;
+    }
+   .submit{ 
+  padding: 10px 0;
+  border-width: 0;
+  display: block;
+  width: 180px;
+  margin: 25px auto 0;
+  background: blue;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  text-transform: uppercase;
+}
+    label, .prediction{font-weight: bold;
+   }
+    }
+</style>
+</head>
+<body>
+
+  <div><H1>Прогнозирование соотношения<br/>
+    матрица-наполнитель</H1></div>
+    <form action="" method="post">
+     
+      <p>Для вывода рекомендованного соотношения "матрица-наполнитель" введите параметры и нажмите кнопку "Отправить".</p>
+        <p>
+	    <label for="property1"> Плотность, кг/м3</label>
+	    <input type="number" step="0.01" name="property1">
+        </p>
+       <p>
+	    <label for="property2">модуль упругости, ГПа</label>
+	    <input type="number" step="0.01" name="property2">
+        </p>
+      <p>
+	    <label for="property3">Количество отвердителя, м.% </label>
+	    <input type="number" step="0.01" name="property3">
+        </p>
+       <p>
+	    <label for="property4">Содержание эпоксидных групп,%_2 </label>
+	    <input type="number" step="0.01" name="property4">
+        </p>
+       <p>
+	    <label for="property5">Температура вспышки, С_2</label>
+	    <input type="number" step="0.01" name="property5">
+        </p>
+       <p>
+	    <label for="property6">Поверхностная плотность, г/м2 </label>
+	    <input type="number" step="0.01" name="property6">
+        </p>
+       <p>
+	    <label for="property7">Модуль упругости при растяжении, ГПа </label>
+	    <input type="number" step="0.01" name="property7">
+        </p>
+       <p>
+	    <label for="property8">Прочность при растяжении, МПа </label>
+	    <input type="number" step="0.01" name="property8">
+        </p>
+       <p>
+	    <label for="property9">Потребление смолы, г/м2 </label>
+	    <input type="number" step="0.01" name="property9">
+        </p>
+       <p>
+	    <label for="property10">Угол нашивки, град </label>
+	    <input type="number" step="0.01" name="property10">
+        </p>
+       <p>
+	    <label for="property11">Шаг нашивки </label>
+	    <input type="number" step="0.01" name="property11">
+        </p>
+       <p>
+	    <label for="property12">Плотность нашивки</label>
+	    <input type="number" step="0.01" name="property12">
+        </p>
+      
+       <p>
+	   
+	<p>
+	    <input type="submit" class="submit" >
+	</p>
+         <p class='prediction'>
+	    Рекомендованное соотношение "матрица-наполнитель":
+        </p>
+      <p>
+    </form
+	{% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+      </body>
+     </html>
