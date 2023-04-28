@@ -1,7 +1,7 @@
 pandas==1.5.3
 flask==2.2.2
 gunicorn
-keras==2.11.0
+tensorflow==2.11.0
 pip==23.1.1
 scikit-learn==1.0.2
 
