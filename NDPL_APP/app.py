@@ -24,9 +24,6 @@ def get_prediction(property1, property2, property3, property4, property5, proper
 
     return pred[0][0]
 
-@app.route('/')
-def index():
-    return "main"
 
 @app.route('/', methods=['post', 'get'])
 
