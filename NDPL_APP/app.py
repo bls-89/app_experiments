@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 def get_prediction(property1, property2, property3, property4, property5, property6, property7, property8, property9, property10, property11, property12):
 
-    model = keras.models.load_model("/content/models/matrica_napolnitel_best_params_mlp")
+    model = keras.models.load_model("777")
     pred = model.predict([property1, property2, property3, property4, property5, property6, property7, property8, property9, property10, property11, property12])
 
     return pred[0][0]
